@@ -7,4 +7,4 @@ gem 'bundler'
 gem 'rake'
 gem 'rspec'
 gem 'sqlite3', '~> 1.4'
-gem 'rails', ENV['RAILS_VERSION']
+gem 'rails', "~> #{ENV['RAILS_VERSION']}"
