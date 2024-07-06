@@ -7,12 +7,4 @@ gem 'bundler'
 gem 'rake'
 gem 'rspec'
 gem 'sqlite3', '~> 1.4'
-
-case version = ENV['RAILS_VERSION']
-when nil
-  gem 'rails', '~> 7.0'
-when 'edge'
-  gem 'rails', github: 'rails/rails'
-else
-  gem 'rails', version
-end
+gem 'rails', ENV['RAILS_VERSION']
